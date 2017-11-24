@@ -1,0 +1,36 @@
+<!--//////////////////////////////////////////////////////////////////////////////////////
+///                                 MODELO DOS BOTÕES                                 ////
+///  PARA ACRESCENTAR UM NOVO BOTÃO, CRIAR UM MACRO COM O NOME BUTTON E O NUMERO      ////
+///  PARA CHAMAR O BOTÃO NA PAGINA { { button.button2("", "", "", "") }}              ////
+///  ACRESCENTAR TAMBÉM O HTML DO BOTÃO NA PAGINA DE MODELOS (views/modelo.html.twig) ////
+///////////////////////////////////////////////////////////////////////////////////////-->
+ <!--//////////////////////////////////////////////////////////////////////////////////////
+////////////////////                   BOTÃO 1                     ////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////-->
+{% macro button1(pId="", pText="",pAwesome="", pEvent="") %}
+    <div class="col-xs-6">
+        <button type="button" class="btn btn-block btn-primary" {{ pEvent }}> {{ pText }}
+            <span class="glyphicon glyphicon-{{pAwesome}}"></span>
+        </button>
+    </div>
+{% endmacro %}
+ <!--//////////////////////////////////////////////////////////////////////////////////////
+////////////////////                   BOTÃO 2                     ////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////-->
+{% macro button2(pId="", pText="",pAwesome="", pEvent="") %}
+    <div class="col-xs-6">
+        <button type="submit" class="btn btn-block btn-success" {{ pEvent }}> {{ pText }}
+            <span class="glyphicon glyphicon-{{pAwesome}}"></span>
+        </button>
+    </div>
+{% endmacro %}
+ <!--//////////////////////////////////////////////////////////////////////////////////////
+////////////////////                   BOTÃO 3                     ////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////-->
+{% macro button3(pId="", pText="",pAwesome="", pEvent="") %}
+    <div class="col-xs-6">
+        <button type="button" class="btn btn-block btn-warning" {{ pEvent }}> {{ pText }}
+            <span class="glyphicon glyphicon-{{pAwesome}}"></span>
+        </button>
+    </div>
+{% endmacro %}

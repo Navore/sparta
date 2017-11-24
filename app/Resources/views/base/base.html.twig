@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>
+            {% block title %}
+            Bem vindo ao Sparta!
+            {% endblock %}
+        </title>
+        {% block icon_head %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('imagens/icon.jpg') }}" />
+        {% endblock icon_head %}
+
+        {% block stylesheets %}
+        <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/jquery.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/custom.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/font-awesome.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/animate.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/mine.css') }}" />
+        {% endblock %}
+        
+        {% block js_head %}
+        
+        {% endblock js_head %}  
+    </head>
+    {% block body %}
+    <body class="nav-md footer_fixed">
+        <div class="container body">
+            <div class="main_container">
+                {% block body_menu %}
+                {{ include('menu/menuLateral.html') }}
+                {{ include('menu/menuSuperior.html') }}
+                {% endblock body_menu %}
+
+                {% block body_content %}
+                <div class="right_col" role="main">
+                    <div class="">
+                        {% block page_head %}
+                        <div class="page-title">
+                            <div class="title_left">
+                                {% block page_title %}
+                                <h3>Base</h3>
+                                {% endblock page_title %}
+                            </div>
+                        </div>
+                        {% endblock page_head %}
+                        
+                        {% block page_content %}
+
+                        {% endblock page_content %}
+                    </div>
+                </div>
+                {% endblock body_content %}
+
+                {% block footer %}
+                <footer>
+                    <div class="pull-right">
+                        Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+                    </div>
+                    <div class="clearfix"></div>
+                </footer>
+                {% endblock footer %}
+
+                {% block js_footer %}
+                <script src="{{ asset('js/jquery.js') }}"></script> 
+                <script src="{{ asset('js/bootstrap.js') }}"></script>
+                <script src="{{ asset('js/custom.js') }}"></script>    
+                <script src="{{ asset('js/mine.js') }}"></script>        
+                {% endblock js_footer %}
+            </div>
+        </div>
+    </body>
+    {% endblock body %}
+</html>

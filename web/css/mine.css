@@ -1,0 +1,94 @@
+@CHARSET "ISO-8859-1";
+/******TOOLTIP*********/
+#help
+{
+    width: 30px;
+    height: 30px;
+}
+#help .help:hover
+{
+    background: #870303;
+    background: -webkit-gradient( linear, left top, left bottom, from( #bf0303 ), to( #870303 ) );
+    background: -webkit-linear-gradient( top, #bf0303, #870303 );
+    background: -moz-linear-gradient( top, #bf0303, #870303 );
+    background: -ms-radial-gradient( top, #bf0303, #870303 );
+    background: -o-linear-gradient( top, #bf0303, #870303 );
+    background: linear-gradient( top, #bf0303, #870303 );
+}
+#help .help
+{
+    height: 100%;
+    font-size: 1.7em;
+    text-align: center;
+    color: #fff;
+    background: #bf0303;
+    background: -webkit-gradient( linear, left top, left bottom, from( #f74e4e ), to( #bf0303 ) );
+    background: -webkit-linear-gradient( top, #f74e4e, #bf0303 );
+    background: -moz-linear-gradient( top, #f74e4e, #bf0303 );
+    background: -ms-radial-gradient( top, #f74e4e, #bf0303 );
+    background: -o-linear-gradient( top, #f74e4e, #bf0303 );
+    background: linear-gradient( top, #f74e4e, #bf0303 );
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: none;
+    cursor: help;
+    display: block;
+}
+
+/****TOOLTIP*****/
+
+#tooltip
+{
+	min-width: 350px;
+	font-family: Ubuntu, sans-serif;
+	font-size: 1em;
+	text-align: center;
+	text-shadow: 0 1px rgba( 0, 0, 0, .5 );
+	line-height: 1.5;
+	color: #fff;
+	background: #333;
+	background: -webkit-gradient( linear, left top, left bottom, from( rgba( 0, 0, 0, .6 ) ), to( rgba( 0, 0, 0, .8 ) ) );
+	background: -webkit-linear-gradient( top, rgba( 0, 0, 0, .6 ), rgba( 0, 0, 0, .8 ) );
+	background: -moz-linear-gradient( top, rgba( 0, 0, 0, .6 ), rgba( 0, 0, 0, .8 ) );
+	background: -ms-radial-gradient( top, rgba( 0, 0, 0, .6 ), rgba( 0, 0, 0, .8 ) );
+	background: -o-linear-gradient( top, rgba( 0, 0, 0, .6 ), rgba( 0, 0, 0, .8 ) );
+	background: linear-gradient( top, rgba( 0, 0, 0, .6 ), rgba( 0, 0, 0, .8 ) );
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 3px 5px rgba( 0, 0, 0, .3 );
+	-moz-box-shadow: 0 3px 5px rgba( 0, 0, 0, .3 );
+	box-shadow: 0 3px 5px rgba( 0, 0, 0, .3 );
+	position: relative;
+	z-index: 100;
+	padding: 5px;
+	margin-left:-120px;
+	margin-top:-90px;
+	float: right;
+	float: top;
+
+}
+/*****SETA BALÃO*******
+#tooltip:after
+{
+       width: 0;
+       height: 0;
+       border-left: 10px solid transparent;
+       border-right: 10px solid transparent;
+	border-top: 10px solid #333;
+       border-top-color: rgba( 0, 0, 0, .7 );
+	content: '';
+	position: absolute;
+	bottom: -10px;
+	right: 5px;
+}
+************************/
+a.tooltip-icon
+{
+	color: #000;
+}
+.tooltip-icon:hover
+{
+	color: #444;
+}
