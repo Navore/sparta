@@ -5,7 +5,7 @@ namespace AppBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * cadunida
+ * cadunida - teste comentario GITHUB
  *
  * @ORM\Table(name="cadunida")
  * @ORM\Entity(repositoryClass="AppBundle\Repository\cadunidaRepository")
