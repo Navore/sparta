@@ -15,7 +15,7 @@ class PrincipalController extends Controller
      */
     public function principalAction()
     {
-        return $this->render('page/principal.himl.twig'
+        return $this->render('page/principal.html.twig'
         //return $this->render('index.html'
         );
     }
